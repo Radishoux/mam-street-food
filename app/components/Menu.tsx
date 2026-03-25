@@ -1,24 +1,52 @@
 const categories = [
   {
-    name: "Starters",
+    name: "Nos Croques",
     items: [
-      { name: "Item coming soon", description: "Menu will be updated shortly.", price: "—" },
-      { name: "Item coming soon", description: "Menu will be updated shortly.", price: "—" },
+      {
+        name: "MamanPoule",
+        description: "Le croque signature de la maison — recette secrète, produits locaux.",
+        price: "À venir",
+      },
+      {
+        name: "MamaKini",
+        description: "Une variante savoureuse du croque-monsieur maison.",
+        price: "À venir",
+      },
     ],
   },
   {
-    name: "Mains",
+    name: "Accompagnements",
     items: [
-      { name: "Item coming soon", description: "Menu will be updated shortly.", price: "—" },
-      { name: "Item coming soon", description: "Menu will be updated shortly.", price: "—" },
-      { name: "Item coming soon", description: "Menu will be updated shortly.", price: "—" },
+      {
+        name: "Merguez / Saucisses",
+        description: "Grillées à la commande, parfaites en accompagnement.",
+        price: "À venir",
+      },
+      {
+        name: "Salade fraîche",
+        description: "Salade du jour avec produits de saison.",
+        price: "À venir",
+      },
+      {
+        name: "Oignons croustillants",
+        description: "En supplément sur tous nos plats.",
+        price: "À venir",
+      },
     ],
   },
   {
-    name: "Drinks & Desserts",
+    name: "Desserts",
     items: [
-      { name: "Item coming soon", description: "Menu will be updated shortly.", price: "—" },
-      { name: "Item coming soon", description: "Menu will be updated shortly.", price: "—" },
+      {
+        name: "Bombe au chocolat",
+        description: "Une explosion de gourmandise pour finir en beauté.",
+        price: "À venir",
+      },
+      {
+        name: "Parfait",
+        description: "Dessert maison du moment.",
+        price: "À venir",
+      },
     ],
   },
 ];
@@ -29,10 +57,10 @@ export default function Menu() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold tracking-widest uppercase mb-4" style={{ color: "var(--color-brand)" }}>
-            What We Serve
+            Ce qu&apos;on vous prépare
           </p>
-          <h2 className="text-4xl md:text-5xl font-black">Our Menu</h2>
-          <p className="text-stone-500 mt-4">Full menu coming soon. Check back shortly!</p>
+          <h2 className="text-4xl md:text-5xl font-black">La Carte</h2>
+          <p className="text-stone-500 mt-4">Carte et tarifs complets à venir très prochainement.</p>
         </div>
 
         <div className="space-y-12">
@@ -60,7 +88,7 @@ export default function Menu() {
                         <p className="text-sm text-stone-500 mt-1">{item.description}</p>
                       </div>
                     </div>
-                    <span className="font-bold text-stone-400 flex-shrink-0">{item.price}</span>
+                    <span className="font-bold text-stone-400 flex-shrink-0 text-sm">{item.price}</span>
                   </div>
                 ))}
               </div>

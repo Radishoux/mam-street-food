@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 const links = [
-  { label: "About", href: "#about" },
+  { label: "À propos", href: "#about" },
   { label: "Menu", href: "#menu" },
-  { label: "Find Us", href: "#location" },
+  { label: "Nous trouver", href: "#location" },
 ];
 
 export default function Navbar() {
@@ -34,7 +34,7 @@ export default function Navbar() {
             className="text-sm px-4 py-2 rounded-full text-white font-semibold transition-colors"
             style={{ backgroundColor: "var(--color-brand)" }}
           >
-            Order Now
+            Nous trouver
           </a>
         </nav>
 
@@ -42,7 +42,7 @@ export default function Navbar() {
         <button
           className="md:hidden text-stone-300 hover:text-white"
           onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          aria-label="Ouvrir le menu"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {open ? (

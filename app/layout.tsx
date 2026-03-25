@@ -8,8 +8,8 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Mam Street Food",
-  description: "Authentic street food with bold flavors. Fresh, fast, and made with love.",
+  title: "Mam Street Food — Toulouse",
+  description: "Street food authentique à Toulouse. Croque-monsieur faits maison avec des produits frais et locaux. 11 Av. de la Gloire, 31500 Toulouse.",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geist.variable} h-full`}>
+    <html lang="fr" className={`${geist.variable} h-full`}>
       <body className="min-h-full flex flex-col bg-stone-950 text-stone-100 antialiased">
         {children}
       </body>

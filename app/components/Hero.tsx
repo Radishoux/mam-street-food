@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background placeholder — swap with an <Image> once photos arrive */}
+      {/* Background — remplacer par une vraie photo quand disponible */}
       <div className="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-950 to-black" />
       <div
         className="absolute inset-0 opacity-10"
@@ -12,32 +12,44 @@ export default function Hero() {
       />
 
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-        {/* Image placeholder */}
-        <div className="w-24 h-24 mx-auto mb-8 rounded-full border-2 flex items-center justify-center text-3xl bg-stone-800/60"
-          style={{ borderColor: "var(--color-brand)" }}>
-          🍜
+        {/* Logo placeholder */}
+        <div
+          className="w-24 h-24 mx-auto mb-8 rounded-full border-2 flex items-center justify-center text-3xl bg-stone-800/60"
+          style={{ borderColor: "var(--color-brand)" }}
+        >
+          🥪
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6">
-          Bold Flavors,{" "}
-          <span style={{ color: "var(--color-brand)" }}>Street Soul</span>
-        </h1>
-        <p className="text-stone-400 text-lg md:text-xl mb-10 max-w-xl mx-auto">
-          Authentic street food made fresh every day. Real ingredients, real recipes, real good.
+        <p className="text-sm font-semibold tracking-widest uppercase mb-4" style={{ color: "var(--color-brand)" }}>
+          Toulouse · 11 Av. de la Gloire
         </p>
+
+        <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6">
+          Du goût,{" "}
+          <span style={{ color: "var(--color-brand)" }}>du cœur</span>
+        </h1>
+        <p className="text-stone-400 text-lg md:text-xl mb-4 max-w-xl mx-auto">
+          Street food authentique fait maison, avec des produits frais et locaux.
+        </p>
+        <div className="flex items-center justify-center gap-2 mb-10">
+          <span className="text-yellow-400 text-lg">★★★★★</span>
+          <span className="text-stone-300 font-semibold">4,9 / 5</span>
+          <span className="text-stone-500 text-sm">(+350 avis Google)</span>
+        </div>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#menu"
             className="px-8 py-3 rounded-full font-semibold text-white transition-colors"
             style={{ backgroundColor: "var(--color-brand)" }}
           >
-            See the Menu
+            Voir la carte
           </a>
           <a
-            href="#about"
+            href="#location"
             className="px-8 py-3 rounded-full font-semibold text-stone-300 bg-stone-800 hover:bg-stone-700 transition-colors"
           >
-            Our Story
+            Nous trouver
           </a>
         </div>
       </div>
